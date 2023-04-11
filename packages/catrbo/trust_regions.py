@@ -25,3 +25,5 @@ class TrustRegion:
         assert len(lb) == len(ub)
         assert callable(cost_model)
         assert n_init > 0 and isinstance(n_init, int)
+        assert success_tolerance > 0 and isinstance(success_tolerance, int)
+        assert failure_tolerance > 0 and isinstance(failure_tolerance, int)
